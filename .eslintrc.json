@@ -31,7 +31,6 @@
       "no-empty": "error",
       "camelcase": "error",
       "no-duplicate-imports": "error",
-      "no-unused-vars": "error",
       "no-empty-function": "error",
       "no-var": "error",
       "eol-last": "error",

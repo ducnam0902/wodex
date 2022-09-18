@@ -1,9 +1,19 @@
 import { createTheme } from "@mui/material/styles";
 
 export const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 767,
+      md: 992,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
   typography: {
     fontSize: 16,
     fontWeightRegular: 400,
+    fontFamily: "Archivo",
     h1: {
       fontSize: "2.8125rem",
       fontWeight: 400,
