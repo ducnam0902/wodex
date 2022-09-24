@@ -50,9 +50,5 @@ export const theme = createTheme({
       color: "#22222b",
       lineHeight: 1.625,
     },
-    body1: {
-      marginTop: 0,
-      marginBottom: "1rem",
-    },
   },
 });
