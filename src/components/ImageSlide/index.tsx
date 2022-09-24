@@ -35,28 +35,30 @@ const ImageSlide = ({
       <Box
         sx={{
           position: "absolute",
-          top: { sm: "25%", md: "40%" },
-          [textPosition]: "15%",
+          top: { sm: "25%", md: "30%" },
+          [textPosition]: { sm: "5%", md: "15%" },
           textAlign: "center",
           display: { xs: "none", sm: "block" },
         }}
       >
         <Typography
           sx={{
-            lineHeight: { sm: "20px", lg: "30px" },
+            lineHeight: "15px",
             color: "#45bf55",
-            fontSize: { sm: "20px", lg: "30px" },
+            fontSize: "13px",
             fontWeight: 700,
+            marginBottom: "20px",
           }}
         >
           {vacationTitle}
         </Typography>
         <Typography
           sx={{
-            lineHeight: { lg: "30px" },
+            lineHeight: "50px",
             color: "#24201f",
-            fontSize: { sm: "20px", lg: "30px" },
+            fontSize: "42px",
             fontWeight: 700,
+            maxWidth: "400px",
           }}
         >
           {collectionName}
@@ -65,8 +67,10 @@ const ImageSlide = ({
           sx={{
             lineHeight: "18px",
             color: "#1a1a1a",
-            fontSize: { sm: "10px", lg: "13px" },
+            fontSize: "13px",
             fontWeight: 700,
+            marginTop: "1rem",
+            marginBottom: "1rem",
           }}
         >
           {description}

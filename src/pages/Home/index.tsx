@@ -3,29 +3,29 @@ import Slide from "src/components/Slide";
 import categoriesList from "src/constants/stub/categories";
 import bannerList from "src/constants/stub/banner";
 import TitleGroup from "src/components/TitleGroup";
-import { Box } from "@mui/material";
 import ProductsList from "src/components/ProductsList";
+import { BoxSpacing } from "src/themes/theme";
 const Home = () => {
   return (
     <>
       <Slide />
       <CategoriesList categoriesList={categoriesList} />
-      <Box sx={{ padding: "10px", height: "70px", width: "100%" }}></Box>
+      <BoxSpacing height="70px"></BoxSpacing>
       <TitleGroup
         collection="Our Store"
         mainTitle="Top selling products"
         description="You’ll definitely find that you are looking for. Browse our collection according the category top interesting products."
       />
-      <Box sx={{ padding: "10px", height: "50px", width: "100%" }}></Box>
-      <CategoriesList categoriesList={bannerList} />
-      <Box sx={{ padding: "10px", height: "90px", width: "100%" }}></Box>
+      <BoxSpacing></BoxSpacing>
+      <CategoriesList categoriesList={bannerList} newCollection />
+      <BoxSpacing height="90px"></BoxSpacing>
       <ProductsList />
       <TitleGroup
         collection="Our Store"
         mainTitle="New PRODUCTS"
         description="Browse our New collection according the category top interesting products."
       />
-      <Box sx={{ padding: "10px", height: "80px", width: "100%" }}></Box>
+      <BoxSpacing height="80px"></BoxSpacing>
     </>
   );
 };

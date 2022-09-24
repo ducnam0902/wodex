@@ -1,4 +1,6 @@
 import { createTheme } from "@mui/material/styles";
+import { Box } from "@mui/material";
+import styled from "@emotion/styled";
 
 export const theme = createTheme({
   breakpoints: {
@@ -52,3 +54,8 @@ export const theme = createTheme({
     },
   },
 });
+
+export const BoxSpacing = styled(Box)`
+  padding: 10px;
+  width: 100%;
+`;

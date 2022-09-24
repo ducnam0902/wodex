@@ -26,17 +26,17 @@ const CategoriesItem = ({ image, title, accessory }: CategoriesItemProps) => {
         >
           <Typography
             variant="h6"
-            sx={{ fontWeight: 500, fontSize: { sm: "13px" } }}
+            sx={{ fontWeight: 500, fontSize: { xs: "10px", sm: "13px" } }}
           >
             {accessory}
           </Typography>
           <Typography
             variant="h3"
             sx={{
-              lineHeight: { sm: "20px", lg: "39px" },
-              fontSize: { sm: "16px", lg: "24px" },
+              lineHeight: { xs: "20px", lg: "39px" },
+              fontSize: { xs: "14px", lg: "24px" },
               paddingTop: "5px",
-              paddingBottom: { sm: "5px", lg: "10px" },
+              paddingBottom: { xs: "5px", lg: "10px" },
             }}
           >
             {title}
