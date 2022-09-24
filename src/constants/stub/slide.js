@@ -5,8 +5,8 @@ const imageList = [
   {
     image: slide1,
     vacationTitle: "SUMMER 20",
-    collectionName: "CHECKOUT SUMMER COLLECTION.",
-    description: "FIRST COME TO GET THE BEST!",
+    collectionName: "NEW DARK COLLECTION!",
+    description: "CHECKOUT SUMMER COLLECTION!",
     textPosition: "right",
   },
   {

@@ -53,4 +53,10 @@ export const ShopButton = styled(Button)`
     margin-top: 5px;
     padding: 10px 0;
   }
+
+  @media screen and (max-width: 460px) {
+    padding: 5px 0;
+    min-width: 120px;
+    font-size: 12px;
+  }
 `;
