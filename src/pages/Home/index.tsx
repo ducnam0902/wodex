@@ -4,6 +4,7 @@ import categoriesList from "src/constants/stub/categories";
 import bannerList from "src/constants/stub/banner";
 import TitleGroup from "src/components/TitleGroup";
 import { Box } from "@mui/material";
+import ProductsList from "src/components/ProductsList";
 const Home = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const Home = () => {
       <Box sx={{ padding: "10px", height: "50px", width: "100%" }}></Box>
       <CategoriesList categoriesList={bannerList} />
       <Box sx={{ padding: "10px", height: "90px", width: "100%" }}></Box>
+      <ProductsList />
       <TitleGroup
         collection="Our Store"
         mainTitle="New PRODUCTS"
