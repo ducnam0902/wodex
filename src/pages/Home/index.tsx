@@ -5,6 +5,7 @@ import bannerList from "src/constants/stub/banner";
 import TitleGroup from "src/components/TitleGroup";
 import ProductsList from "src/components/ProductsList";
 import { BoxSpacing } from "src/themes/theme";
+import NewProduct from "src/components/NewProduct";
 const Home = () => {
   return (
     <>
@@ -26,6 +27,8 @@ const Home = () => {
         description="Browse our New collection according the category top interesting products."
       />
       <BoxSpacing height="80px"></BoxSpacing>
+      <NewProduct />
+      <BoxSpacing height="90px"></BoxSpacing>
     </>
   );
 };
