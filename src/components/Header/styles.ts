@@ -29,3 +29,22 @@ export const BoxIcon = styled(Box)`
   font-size: 1.3125rem !important;
   cursor: pointer;
 `;
+
+export const BoxWrapper = styled(Box)`
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  z-index: 1000;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #fff;
+  background-color: #fdbf70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  svg {
+    font-size: 1.375rem;
+    line-height: 2.5rem;
+  }
+`;

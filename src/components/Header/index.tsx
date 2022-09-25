@@ -1,13 +1,44 @@
 import { Container, Toolbar, Avatar, Stack, Box, Badge } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import wodex from "../../assets/image/logo.png";
-import { NavLinkBase, HomeIcon, BoxIcon } from "src/components/Header/styles";
+import {
+  NavLinkBase,
+  HomeIcon,
+  BoxIcon,
+  BoxWrapper,
+} from "src/components/Header/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import MenuDrawer from "src/components/MenuDrawer";
-
+import { VscArrowUp } from "react-icons/vsc";
+import { useEffect, useState } from "react";
 const Header = () => {
+  const [isShowScrollToTop, setIsShowScrollToTop] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setIsShowScrollToTop(true);
+    } else if (scrolled <= 300) {
+      setIsShowScrollToTop(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisible);
+    return () => {
+      window.removeEventListener("scroll", toggleVisible);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <AppBar position="static" sx={{ backgroundColor: "#000000" }}>
       <Container maxWidth="lg">
@@ -65,6 +96,11 @@ const Header = () => {
           </Box>
         </Toolbar>
       </Container>
+      {isShowScrollToTop && (
+        <BoxWrapper onClick={scrollToTop}>
+          <VscArrowUp />
+        </BoxWrapper>
+      )}
     </AppBar>
   );
 };
