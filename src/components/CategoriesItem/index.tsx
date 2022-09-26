@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { ShopLink, ImageBanner, ShopButton } from "./styles";
+import { useNavigate } from "react-router-dom";
 type CategoriesItemProps = {
   image: string;
   title: string;
@@ -7,6 +8,10 @@ type CategoriesItemProps = {
 };
 
 const CategoriesItem = ({ image, title, accessory }: CategoriesItemProps) => {
+  const navigate = useNavigate();
+  const handleNavigateToShop = () => {
+    navigate("/wodex/shop");
+  };
   return (
     <Box sx={{ padding: "10px", position: "relative" }}>
       <ImageBanner
@@ -41,7 +46,7 @@ const CategoriesItem = ({ image, title, accessory }: CategoriesItemProps) => {
           >
             {title}
           </Typography>
-          <ShopButton>Shop Now</ShopButton>
+          <ShopButton onClick={handleNavigateToShop}>Shop Now</ShopButton>
         </Box>
       ) : (
         <Box

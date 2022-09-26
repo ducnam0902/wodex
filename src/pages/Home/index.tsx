@@ -17,10 +17,10 @@ const Home = () => {
         mainTitle="Top selling products"
         description="You’ll definitely find that you are looking for. Browse our collection according the category top interesting products."
       />
-      <BoxSpacing></BoxSpacing>
+      <BoxSpacing height="50px" />
+      <ProductsList />
       <CategoriesList categoriesList={bannerList} newCollection />
       <BoxSpacing height="90px"></BoxSpacing>
-      <ProductsList />
       <TitleGroup
         collection="Our Store"
         mainTitle="New PRODUCTS"
