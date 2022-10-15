@@ -15,6 +15,7 @@ type ProductItemProps = {
   price: number;
   isHotItem?: boolean;
   discountPercent?: number;
+  slug?: string;
 };
 
 const ProductItem = ({
@@ -23,16 +24,22 @@ const ProductItem = ({
   price,
   isHotItem,
   discountPercent,
+  slug,
 }: ProductItemProps) => {
   return (
     <Grid
       item
-      sx={{ textAlign: "center", marginBottom: "30px" }}
+      sx={{
+        textAlign: "center",
+        marginBottom: "30px",
+        paddingLeft: "15px",
+        paddingRight: "15px",
+      }}
       xs={12}
       sm={6}
       lg={3}
     >
-      <LinkBase to="/">
+      <LinkBase to={`/wodex/shop/${slug}`}>
         <BackgroundImage image={image[0]} imageHover={image[1]}>
           {isHotItem && (
             <MainTitleWrapper component="span">
