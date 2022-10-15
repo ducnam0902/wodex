@@ -27,7 +27,8 @@ const products = [
     image: [product1a, product1b],
     price: 17.0,
     isHotItem: true,
-    discountPercent: 0,
+    discountPercent: 30,
+    slug: "hot-base-tee",
   },
   {
     name: "Cardigan Sweater",
@@ -35,13 +36,15 @@ const products = [
     price: 12.0,
     isHotItem: true,
     discountPercent: 20,
+    slug: "cardigan-sweater",
   },
   {
     name: "Tighten Bag",
     image: [product3a, product3a],
     price: 371.0,
     isHotItem: true,
-    discountPercent: 0,
+    discountPercent: 20,
+    slug: "tighten-bag",
   },
   {
     name: "Retro Stripe Slim",
@@ -49,13 +52,15 @@ const products = [
     price: 15.0,
     isHotItem: false,
     discountPercent: 20,
+    slug: "retro-stripe-slim",
   },
   {
     name: "Knot It Tee",
     image: [product5a, product5b],
     price: 33.0,
     isHotItem: false,
-    discountPercent: 0,
+    discountPercent: 10,
+    slug: "knot-it-tee",
   },
   {
     name: "Striped Ribbed",
@@ -63,6 +68,7 @@ const products = [
     price: 30.0,
     isHotItem: true,
     discountPercent: 0,
+    slug: "striped-ribbed",
   },
   {
     name: "Black Skinny Jeans",
@@ -70,6 +76,7 @@ const products = [
     price: 30.0,
     isHotItem: false,
     discountPercent: 0,
+    slug: "black-skinny-jeans",
   },
   {
     name: "Bomb Cycle",
@@ -77,6 +84,7 @@ const products = [
     price: 45.0,
     isHotItem: false,
     discountPercent: 0,
+    slug: "bomb-cycle",
   },
 ];
 

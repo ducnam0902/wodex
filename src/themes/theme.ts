@@ -53,6 +53,16 @@ export const theme = createTheme({
       lineHeight: 1.625,
     },
   },
+  components: {
+    MuiTabs: {
+      styleOverrides: {
+        indicator: {
+          background: "#22222b",
+          height: "1px",
+        },
+      },
+    },
+  },
 });
 
 export const BoxSpacing = styled(Box)`

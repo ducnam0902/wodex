@@ -10,6 +10,7 @@ const Shop = lazy(() => import("./pages/Shop"));
 const Blog = lazy(() => import("./pages/Blog"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
 const Contact = lazy(() => import("./pages/Contact"));
+const Products = lazy(() => import("./pages/Products"));
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Navigation />}>
               <Route index element={<Home />} />
               <Route path="wodex/shop" element={<Shop />} />
+              <Route path="wodex/shop/:name" element={<Products />} />
               <Route path="wodex/blog" element={<Blog />} />
               <Route path="wodex/about-us" element={<AboutUs />} />
               <Route path="wodex/contact" element={<Contact />} />
