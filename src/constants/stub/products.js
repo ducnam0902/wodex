@@ -29,6 +29,8 @@ const products = [
     isHotItem: true,
     discountPercent: 30,
     slug: "hot-base-tee",
+    type: "Women",
+    categories: "T-shirt",
   },
   {
     name: "Cardigan Sweater",
@@ -37,6 +39,8 @@ const products = [
     isHotItem: true,
     discountPercent: 20,
     slug: "cardigan-sweater",
+    type: "Women",
+    categories: "T-shirt",
   },
   {
     name: "Tighten Bag",
@@ -45,6 +49,8 @@ const products = [
     isHotItem: true,
     discountPercent: 20,
     slug: "tighten-bag",
+    type: "Accessories",
+    categories: "Bag",
   },
   {
     name: "Retro Stripe Slim",
@@ -53,6 +59,8 @@ const products = [
     isHotItem: false,
     discountPercent: 20,
     slug: "retro-stripe-slim",
+    type: "Men",
+    categories: "T-shirt",
   },
   {
     name: "Knot It Tee",
@@ -61,6 +69,8 @@ const products = [
     isHotItem: false,
     discountPercent: 10,
     slug: "knot-it-tee",
+    type: "Women",
+    categories: "T-shirt",
   },
   {
     name: "Striped Ribbed",
@@ -69,6 +79,8 @@ const products = [
     isHotItem: true,
     discountPercent: 0,
     slug: "striped-ribbed",
+    type: "Women",
+    categories: "clothes",
   },
   {
     name: "Black Skinny Jeans",
@@ -77,6 +89,8 @@ const products = [
     isHotItem: false,
     discountPercent: 0,
     slug: "black-skinny-jeans",
+    type: "Women",
+    categories: "Jeans",
   },
   {
     name: "Bomb Cycle",
@@ -85,6 +99,8 @@ const products = [
     isHotItem: false,
     discountPercent: 0,
     slug: "bomb-cycle",
+    type: "Accessories",
+    categories: "another",
   },
 ];
 
