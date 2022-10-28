@@ -9,13 +9,15 @@ import {
   MainTitleWrapper,
 } from "./style";
 
-type ProductItemProps = {
-  name: string;
-  image: Array<string>;
-  price: number;
+export type ProductItemProps = {
+  name?: string;
+  image: string[];
+  price?: number;
   isHotItem?: boolean;
   discountPercent?: number;
   slug?: string;
+  type?: string;
+  categories?: string;
 };
 
 const ProductItem = ({
@@ -76,7 +78,7 @@ const ProductItem = ({
           </Stack>
         </BackgroundImage>
       </LinkBase>
-      <ProductLink to="/">{name}</ProductLink>
+      <ProductLink to={`/wodex/shop/${slug}`}>{name}</ProductLink>
       <Typography
         variant="h6"
         sx={{ fontSize: "14px", lineHeight: 2, color: "#22222b" }}
