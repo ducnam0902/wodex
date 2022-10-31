@@ -52,7 +52,10 @@ const CategoriesItem = ({ image, title, accessory }: CategoriesItemProps) => {
         <Box
           sx={{ paddingLeft: "20px", position: "absolute", bottom: "10%", left: 0 }}
         >
-          <Typography variant="h3" sx={{ lineHeight: "41px", fontWeight: 500 }}>
+          <Typography
+            variant="h3"
+            sx={{ lineHeight: "41px", fontWeight: 500, textTransform: "capitalize" }}
+          >
             {title}
           </Typography>
           <ShopLink to="/wodex/shop">Shop Now</ShopLink>
