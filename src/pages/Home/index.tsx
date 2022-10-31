@@ -1,12 +1,22 @@
 import CategoriesList from "src/components/CategoriesList";
 import Slide from "src/components/Slide";
-import categoriesList from "src/constants/stub/categories";
+// import categoriesList from "src/constants/stub/categories";
 import bannerList from "src/constants/stub/banner";
 import TitleGroup from "src/components/TitleGroup";
 import ProductsList from "src/components/ProductsList";
 import { BoxSpacing } from "src/themes/theme";
 import NewProduct from "src/components/NewProduct";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { fetchCategoriesRequest } from "src/store/categories/categories.action";
+import { getCategoriesSelector } from "src/store/categories/categories.selector";
 const Home = () => {
+  const categoriesList = useSelector(getCategoriesSelector);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchCategoriesRequest());
+  }, []);
+
   return (
     <>
       <Slide />
